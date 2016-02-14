@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+    <!-- Le styles -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <title> Junction Tree Framework for UGMS</title>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" LINK="#0000ff" VLINK="#800080" DIR="LTR">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="./#">Home</a></li>
+              <li><a href="./#papers">Papers</a></li>
+              <!--<li><a href="#contact">Contact</a></li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+ <div class="container">
+
+<h3 align=center > A Junction Tree Framework for Undirected Graphical Model Selection</h3>
+
+<br>
+
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-weight: normal"><FONT SIZE=3>
+Divyanshu Vats and Robert D. Nowak</FONT></P>
+</P>
+<BR>
+
+<!--- <P ALIGN=CENTER ><IMG SRC="ugms.png" NAME="graphics1" WIDTH=450 HEIGHT=120 BORDER=0><BR CLEAR=LEFT><BR>
+</P> --->
+
+<h4>Abstract</h4>
+An undirected graphical model is a joint probability distribution defined on an undirected graph G<sup>*</sup>, where the vertices in the graph index a collection of random variables and the edges encode conditional independence relationships amongst random variables.  The undirected graphical model selection (UGMS) problem is to estimate the graph G<sup>*</sup> given observations drawn from the undirected graphical model.  This paper proposes a framework for decomposing the UGMS problem into multiple subproblems over clusters and subsets of the separators in a junction tree.  The junction tree is constructed using a graph that contains a superset of the edges in G<sup>*</sup>.  We highlight three main properties of using junction trees for UGMS.  First, different regularization parameters or different UGMS algorithms can be used to learn different parts of the graph.  This is possible since the subproblems we identify can be solved independently of each other.  Second, under certain conditions, a junction tree based UGMS algorithm can produce consistent results with exponentially fewer observations than the usual requirements of existing algorithms.  Third, both our theoretical and experimental results show that the junction tree framework does a significantly better job at finding the weakest edges in a graph than existing methods.  This property is a consequence of both the first and second properties.  Finally, we note that our framework is independent of the choice of the UGMS algorithm and can be used as a wrapper around standard UGMS algorithms for more accurate graph estimation.
+<BR> <BR>
+
+<h4>Preprint</h4>
+[<A HREF="http://arxiv.org/abs/1304.4910">preprint</A>]
+<BR><BR>
+
+<h4>Code</h4>
+<A HREF="http://www.ima.umn.edu/~dvats/JunctionTreeUGMSToolbox.zip">github</A>
+<BR><BR>
+
+</div>
+
+</BODY>
+</HTML>

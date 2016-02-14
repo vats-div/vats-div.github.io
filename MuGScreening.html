@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+    <!-- Le styles -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <title> MuG </title>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" LINK="#0000ff" VLINK="#800080" DIR="LTR">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="./#">Home</a></li>
+              <li><a href="./#papers">Papers</a></li>
+              <!--<li><a href="#contact">Contact</a></li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+ <div class="container">
+
+<h3 align=center >High-Dimensional Screening Using Multiple Grouping of Variables</h3>
+
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-weight: normal"><FONT SIZE=3>
+Divyanshu Vats</FONT></P>
+</P>
+<BR>
+
+<P ALIGN=CENTER ><IMG SRC="MuGScreening.png" NAME="graphics1" WIDTH=280 HEIGHT=182 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+
+<h4>Abstract</h4>
+Screening is the problem of finding a superset of the set of non-zero entries in an unknown p-dimensional vector b given n noisy observations.  Naturally, we want this superset to be as small as possible.  We propose a novel framework for screening, which we refer to as Multiple Grouping (MuG), that groups variables, performs variable selection over the groups, and repeats this process multiple number of times to estimate a sequence of sets that contains the non-zero entries in b.  Screening is done by taking an intersection of all these estimated sets.  The MuG framework can be used in conjunction with any group based variable selection algorithm.  
+In the high-dimensional setting, where $p \gg n$, we show that when MuG is used with the group Lasso estimator, screening can be consistently performed without using any tuning parameter.  Our numerical simulations clearly show the merits of using the MuG framework in practice.
+<BR> <BR>
+
+<h4> Brief Description</h4>
+<ul>
+<li>
+<b>Main Idea:</b>  As shown in the figure, the Multiple Grouping (MuG) framework groups variables, performs variable selection over the groups (group Lasso is one of many algorithms we can use), and then takes an intersection over all the estimated supports to perform screening.
+
+<li>
+<b>Parameter-Free Screening:</b> For the sparse linear regression problem, we show that screening using MuG can be done without using any tuning parameter.  We use properties of the Lasso and the group Lasso to achieve parameter-free screening.
+</ul>
+<BR>
+
+<h4>Preprint</h4>
+[<A HREF="http://arxiv.org/abs/1208.2043">arxiv</A>]
+<BR><BR>
+
+<h4>Code</h4>
+Will be released soon.
+<BR><BR>
+
+<h4>Contact</h4>
+dvats AT ima DOT umn DOT edu
+<BR><BR>
+
+</div>
+
+</BODY>
+</HTML>

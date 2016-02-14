@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+    <!-- Le styles -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <title> Generalized Inference </title>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" LINK="#0000ff" VLINK="#800080" DIR="LTR">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="./#">Home</a></li>
+              <li><a href="./#papers">Papers</a></li>
+              <!--<li><a href="#contact">Contact</a></li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+ <div class="container">
+
+<h3 align=center >Finding Non-overlapping Clusters for Generalized Inference Over Graphical Models</h3>
+
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-weight: normal"><FONT SIZE=3>
+Divyanshu Vats and José M. F. Moura</FONT></P>
+</P>
+<BR>
+
+<P ALIGN=CENTER ><IMG SRC="GeneralizedInference_html_m20ba691a.png" NAME="graphics1" WIDTH=665 HEIGHT=142 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+
+<h4>Abstract</h4>
+Graphical models use graphs to compactly capture stochastic dependencies amongst a collection of random variables.  Inference over graphical models corresponds to finding marginal probability distributions given joint probability distributions.  In general, this is computationally intractable, which has led to a quest for finding efficient approximate inference algorithms.  We propose a framework for generalized inference over graphical models that can be used as a wrapper for improving the estimates of approximate inference algorithms. Instead of applying an inference algorithm to the original graph, we apply the inference algorithm to a block-graph, defined as a graph in which the nodes are non-overlapping clusters of nodes from the original graph. This results in marginal estimates of a cluster of nodes, which we further marginalize to get the marginal estimates of each node.  Our proposed block-graph construction algorithm is simple, efficient, and motivated by the observation that approximate inference is more accurate on graphs with longer cycles.  We present extensive numerical simulations that illustrate our block-graph framework with a variety  of inference algorithms (e.g., those in the libDAI software package).  These simulations show the improvements provided by our framework.
+<BR> <BR>
+
+<h4>Preprint</h4>
+[<A HREF="./GeneralizedInf2012.pdf">preprint</A>]
+<BR><BR>
+
+<h4>Code</h4>
+[<A HREF="http://www.ima.umn.edu/~dvats/GeneralizedInferenceData/GeneralizedInferenceData/GeneralizedInferenceCode.zip">download</A>]: Matlab and libDAI code - see README.txt for details.
+<BR><BR>
+
+<h4>Data</h4>
+[<A HREF="http://www.ima.umn.edu/~dvats/GeneralizedInferenceData/GeneralizedInferenceData/IsingGraphs.zip">download</A>]: Graphical models used in the paper.
+
+
+</div>
+
+</BODY>
+</HTML>
